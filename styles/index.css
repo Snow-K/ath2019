@@ -61,26 +61,6 @@
   font-size: 3vw;
 }
 
-
-
-#f_3 .bg {
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 50vh;
-  width: 100vw;
-  margin: auto;
-  background-color: #000000;
-	z-index: -2;
-}
-
-#f_3 .bg img{
-  height: 50vh;
-  filter: grayscale();
-	z-index: -1;
-}
-
 #f_3 .logo {
   width: 12vw;
   margin: 50px;

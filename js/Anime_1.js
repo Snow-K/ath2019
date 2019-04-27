@@ -1,7 +1,12 @@
 $(function(){
-  $('#wrap').css({opacity:'0'});
+  $('#f_3').css({opacity:'0'});
+  $('#f_4').css({opacity:'0'});
+	$('#f_5').css({opacity:'0'});
   setTimeout(function(){
-    $("#anime_1").stop().animate({opacity:'0'},1000);
-    $('#wrap').stop().animate({opacity:'1'},1000);
-  },3000);
+    $('#f_3').stop().animate({opacity:'1'},1000);
+    $('#f_4').stop().animate({opacity:'1'},1000);
+		$('#f_5').stop().animate({opacity:'1'},1000);
+    $('#f_2').stop().animate({opacity:'0'},1000);
+    $('#f_2').css({display:'none'});
+  },8000);
 });

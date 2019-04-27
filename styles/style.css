@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
 /*最初のアニメーション*/
 #anime_1 {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -16,9 +18,10 @@
   padding: 0px;
 }
 
-/*ページ全体*/
-#wrap {
-  
+body {
+  overflow-x: hidden;
+  font-family: 'Noto Serif JP', serif;
+  width: 100vw;
 }
 
 /* ----- ここからメニューバー ----- */
@@ -26,10 +29,12 @@
 
 /*ナビゲーションメニュー(高さを与える)*/
 nav { /*heightの変更を子要素に適用すべし*/
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 100vw;
   height: 80px;
   background-color: #303030;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(255,255,255,0.3);
 }
 /*要素全体*/
 nav .container {
@@ -92,6 +97,7 @@ nav #navbar-menu {
 }
 
 #navbar-menu ul {
+  text-align: center;
   height: 80px;
 }
 /*PC表示用リンク*/
@@ -106,12 +112,23 @@ nav #navbar-menu {
 #navbar-menu .icon {
   height: 50px;
   display: none;
-  color: #909090;
-  width: 15vw;
+  width: 18vw;
   margin: 0px;
   text-align: center;
   line-height: 60px;
   vertical-align: middle;
+}
+
+#navbar-menu .link a {
+  color: #909090;
+}
+
+#navbar-menu .link a:hover {
+  color: #cccccc;
+}
+
+#navbar-menu .this-page a {
+  color: #ffffff;
 }
 
 #navbar-menu li a {
@@ -122,13 +139,23 @@ nav #navbar-menu {
   color: #909090;
 }
 
+footer {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: #909090;
+  background-color: #303030;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
 /*スマホ表示時のスタイル*/
 @media screen and (max-width:900px) {
   #navbar-menu .txt {
 	display: none;
   }
   nav {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     height: 50px;
   }
@@ -138,9 +165,11 @@ nav #navbar-menu {
   }
   nav #navbar-menu {
     height: 50px;
+    width: 100%;
   }
   #navbar-menu ul {
 	height: 50px;
+    width: 100%;
   }
   
   .attr-nav {
@@ -149,6 +178,7 @@ nav #navbar-menu {
   .navbar-header {
 	display: none;
   }
+  
   #navbar-menu .icon {
 	display: inline-block;
   }
@@ -166,13 +196,24 @@ nav #navbar-menu {
   width: 100%;
 }
 
-@media screen and (max-width:900px) {
-  #wrapper {
-	top: 0px;
-}
-}
+
 
 body{
   min-width:0;
 }
 
+footer {
+  position: fixed;
+  bottom: 0px;
+	word-break: keep-all;
+}
+
+@media screen and (max-width:900px) {
+  #wrapper {
+	top: 0px;
+  }
+  footer {
+    bottom: 50px;
+    font-size: 15px;
+  }
+}

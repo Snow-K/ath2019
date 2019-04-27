@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="jp">
 <head>
 	<meta charset="UTF-8">
@@ -34,20 +34,20 @@
   
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index.css">
-  
+    <link rel="stylesheet" href="styles/animate.min.css">
     <!-- jQuery -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- article -->
+    <!-- 冒頭アニメーション -->
     <script  type="text/javascript" src="js/Anime_1.js"></script>
-	
+  
   	<title>六甲学院第78回体育祭「鋒」</title>
 </head>
 
 <body>
-  <div id="anime_1">
-    <img src="img/Anime_1.gif" alt="読み込み中です。">
+  <div id="video_1">
+    <video src="img/bg.webm" autoplay loop muted></video>
   </div>
-  
+
   <div id="wrap">
     <!-- ナビゲーションメニュー -->
     <nav id="nav">
@@ -58,7 +58,6 @@
             <ul>
                 <li><a href="#"><i class="fab fa-facebook fa-2x"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus fa-2x"></i></a></li>
             </ul>
         </div>
         
@@ -72,26 +71,44 @@
         <div id="navbar-menu">
             <ul class="navbar-center">
                 <li class="txt"><a href="#">Home</a></li>
-                <li class="icon"><a href="#"><ruby><i class="fas fa-home fa-2x"></i><rt>Home</rt></ruby></a></li>
+                <li class="icon this-page"><a href="#"><ruby><i class="fas fa-home fa-2x"></i><rt>Home</rt></ruby></a></li>
                 <li class="txt"><a href="#">Program</a></li>
-                <li class="icon"><a href="#"><ruby><i class="far fa-clock fa-2x"></i><rt>Program</rt></ruby></a></li>
+                <li class="icon link"><a href="#"><ruby><i class="far fa-clock fa-2x"></i><rt>Program</rt></ruby></a></li>
                 <li class="txt"><a href="#">Gallery</a></li>
-                <li class="icon"><a href="#"><ruby><i class="far fa-image fa-2x"></i><rt>Gallery</rt></ruby></a></li>
+                <li class="icon link"><a href="#"><ruby><i class="far fa-image fa-2x"></i><rt>Gallery</rt></ruby></a></li>
                 <li class="txt"><a href="#">Staff</a></li>
-                <li class="icon"><a href="#"><ruby><i class="far fa-user fa-2x"></i><rt>Staff</rt></ruby></a></li>
+                <li class="icon link"><a href="#"><ruby><i class="far fa-user fa-2x"></i><rt>Staff</rt></ruby></a></li>
                 <li class="txt"><a href="#">Access</a></li>
-                <li class="icon"><a href="#"><ruby><i class="fas fa-map-marker-alt fa-2x"></i><rt>Access</rt></ruby></a></li>
+                <li class="icon link"><a href="#"><ruby><i class="fas fa-map-marker-alt fa-2x"></i><rt>Access</rt></ruby></a></li>
             </ul>
         </div>
       </div>
     </nav>
   
     <div id="wrapper">
-      <header>
-        <p id="date">2019年6月8日(土)開催！！</p>
-        <p id="title">六甲学院第78回体育祭</p>
-        <img src="img/logo.jpg">
-      </header>
+      <section id="f_2" class="fadeOut">
+        <p  class="animated fadeInUp">77年の伝統を継承し「鋒」へ。</p><p  class="animated fadeInUp">令和の時代にも六甲の体育祭は進化する。</p><p  class="animated fadeInUp">その「鋒」となる。</p>
+      </section>
+      <section id="f_3">
+        <h1>2019年6月8日(日)開催</h1>
+        <h2>第78回体育祭六甲学院体育祭「鋒」</h2>
+        <img class="logo" src="img/logo.jpg" alt="">
+				<div class="bg"><img src="img/top.jpg" alt=""></div>  <!-- ここはTシャツデザインに。背景黒。白デザイン　-->
+      </section>
+      <section id="f_4">
+        <p class="animated fadeInUp">矛の先を意味する「鋒」</p>
+				<p class="animated fadeInUp">俺たちは、新時代の先陣を切る。</p>
+				<p class="animated fadeInUp">新時代の六甲に次世代の息吹を。</p>
+      </section>
+      <section id="f_5" class="animated fadeInUp">
+				<h1>Follow Us on</h1>
+				<div class="twitter animated fadeInLeftBig"><img src="img/Twitter_Logo_Blue.png" alt=""><p>Twitter公式アカウント</p></div>
+				<div class="facebook animated fadeInLeftBig"><img src="img/flogo_RGB_HEX-1024.png" alt=""><p>facebook公式アカウント</p></div>
+			</section>
+      
+      <footer>
+        &copy;2019.六甲学院中学校・高等学校　第58回体育祭委員会
+      </footer>
     </div>
   </div>
 </body>

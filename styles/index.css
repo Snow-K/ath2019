@@ -86,6 +86,7 @@
   line-height: 200%;
   font-size: 5vw;
 	color: #ffffff;
+	margin: 30px,0px;
 }
 
 #f_4 p:nth-child(1) {
@@ -107,7 +108,7 @@
 }
 
 #f_5 {
-	background-color: #303030;
+	background-color: #000000;
 	text-align: center;
 	animation-duration: 1.5s;
   animation-delay: 10s;
@@ -136,7 +137,7 @@
 #f_5 p {
  	vertical-align: middle;
 	line-height: 70px;
-	color: #909090;
+	color: #ffffff;
 	font-size: 2vw;
 	margin: 0px;
 	height: 50px;

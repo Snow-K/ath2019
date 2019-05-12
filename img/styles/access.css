@@ -1,0 +1,30 @@
+#content .text h2 {
+  line-height: 1.8;
+}
+
+#content .text div {
+  margin-top: 20px;
+}
+
+#content .text {
+  margin-bottom: 80px;
+}
+
+#content .mimg img {
+  margin: 20px;
+}
+
+#content .mlink {
+  width: 200px;
+  padding: 10px 20px;
+  margin: 30px auto;
+  font-weight: bold;
+  border: solid 3px #cbcbcb;
+  font-size: 20px;
+  text-align: center;
+}
+
+#content .mlink a {
+  text-decoration: none;
+  color: #ffffff;
+}

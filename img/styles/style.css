@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+/*余白リセット*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Noto Serif JP', serif;
+  width: 100vw;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+  background-color: #000000;
+}
+
+#bg img {
+  width: 100vw;
+}
+
+#wrapper {
+  text-align: center;
+}
+
+#header h1 {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+#header h2 {
+  color: #ffffff;
+}
+
+#header h3 {
+  color: #ffffff;
+}
+
+#content {
+  background-color: #000000;
+  min-height: 100vh;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* ----- ここからメニューバー ----- */
+/* ----- スマホ表示は900pxがトリガー -----*/
+
+/*ナビゲーションメニュー(高さを与える)*/
+nav { /*heightの変更を子要素に適用すべし*/
+  position: fixed;
+  width: 100vw;
+  height: 80px;
+  background-color: #303030;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(255,255,255,0.3);
+}
+/*要素全体*/
+nav .container {
+  height: 80px; /*nav要素に同じ*/
+}
+/*リスト親(・消去)*/
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+/*リスト要素*/
+nav li {
+  display: inline-block;
+}
+
+/*SNSアイコンたち*/
+nav .container .attr-nav {
+  height: 80px; /*nav要素に同じ*/
+  width: 180px;
+  float: right;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.attr-nav ul {
+  height: 80px; /*.nav要素に同じ*/
+}
+
+.attr-nav li {
+  width: 50px;
+  text-align: center;
+  line-height: 80px; 
+  vertical-align: middle;
+}
+
+.attr-nav a {
+  color: #909090;
+}
+
+
+/*ヘッダーナビゲーション*/
+/*(Logo)*/
+nav .navbar-header {
+  height: 80px;
+  width: 120px; /*PC表示のときロゴしかないから、余白用に大きめ*/
+  float: left;
+  text-align: center;
+}
+/*ロゴ*/
+nav .navbar-header img {
+  height: 80px;
+}
+
+/*リンクたち*/
+nav #navbar-menu {
+  height: 80px;
+  width: 600px;
+  margin: auto;
+}
+
+#navbar-menu ul {
+  text-align: center;
+  height: 80px;
+}
+/*PC表示用リンク*/
+#navbar-menu .txt {
+  height: 80px;
+  width: 90px;
+  text-align: center;
+  line-height: 80px;
+  vertical-align: middle;
+}
+/*スマホ表示用リンク*/
+#navbar-menu .icon {
+  height: 50px;
+  display: none;
+  width: 18vw;
+  margin: 0px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+#navbar-menu .link a {
+  color: #909090;
+}
+
+#navbar-menu .link a:hover {
+  color: #cccccc;
+}
+
+#navbar-menu .this-page a {
+  color: #ffffff;
+}
+
+#navbar-menu li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #909090;
+}
+
+footer {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  color: #909090;
+  background-color: #303030;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+/*スマホ表示時のスタイル*/
+@media screen and (max-width:900px) {
+  #navbar-menu .txt {
+	display: none;
+  }
+  nav {
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+  }
+  
+  nav .container {
+    height: 50px;
+  }
+  nav #navbar-menu {
+    height: 50px;
+    width: 100%;
+  }
+  #navbar-menu ul {
+	height: 50px;
+    width: 100%;
+  }
+  
+  .attr-nav {
+    display: none;
+  }
+  .navbar-header {
+	display: none;
+  }
+  
+  #navbar-menu .icon {
+	display: inline-block;
+  }
+}
+
+/* -----後処理 ----- */
+
+/*ページ全体*/
+#wrapper {
+  clear: both;
+  margin: 0px;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+}
+
+
+
+body{
+  min-width:0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+	word-break: keep-all;
+}
+
+@media screen and (max-width:900px) {
+  #wrapper {
+	top: 0px;
+  }
+  footer {
+    bottom: 50px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,15 @@
+.pic img {
+  width: 20vw;
+  margin-top: 10px;
+  margin-right: 2vw;
+}
+
+@media screen and (max-width:900px) {
+  .pic img {
+    width: 45vw;
+  }
+}
+
+#content h5 {
+  margin-top: 20px;
+}
